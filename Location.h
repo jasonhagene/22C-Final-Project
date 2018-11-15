@@ -5,7 +5,7 @@
 #define radius 3959
 class Location {
 private:
-	std::string name, phoneNumber, type, address;
+	std::string name, phoneNumber, address;
 	double latitude, longitude, relativeDistance /*Used for sorting algorithms/lists so they don't need to call a trig funtion 12 times per distance check*/;
 	double toRadians(double degrees) { return (degrees * pi) / 180; }
 public:
@@ -16,7 +16,6 @@ public:
 	double getDistance(Location);
 	std::string getName() { return name; }	
 	std::string getNumber() { return phoneNumber; }
-	std::string getType() { return type; }
 	std::string getAddress() { return address; }
 	std::string getCoordiantes();
 	void setRelativeDistance(Location);

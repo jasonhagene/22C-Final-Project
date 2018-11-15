@@ -3,16 +3,16 @@
 
 Location::Location() {
 	name = "Null Island";
-	type = "Landmark";
+	address = "Middle of the Ocean";
 	phoneNumber = "N/A";
 	latitude = 0;
 	longitude = 0;
 }
 
-Location::Location(std::string inName, std::string inNumber, std::string inType, double inLat, double inLong) {
+Location::Location(std::string inName, std::string inNumber, std::string inAddress, double inLat, double inLong) {
 	name = inName;
 	phoneNumber = inNumber;
-	type = inType;
+	address;
 	latitude = inLat;
 	longitude = inLong;
 }
